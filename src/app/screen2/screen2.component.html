@@ -1,0 +1,27 @@
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class='col-12 modal-title text-center'>
+    <h4 class="modal-title" id="modal-basic-title">TERMO</h4>
+    
+    <button type="button" id='close-btn' class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loren Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+        type</p>
+  </div>
+  <div class="modal-footer">
+  <!-- <input type="checkbox" (change)="check()" (ngModel)="checked"/> -->
+ 
+ 
+      <input type="checkbox" (change)="changeCheck($event)"/>Li E aceito os termos e condições acima
+
+      <!-- <button [disabled]="true" id='aa'  type="submit" >Submit</button> -->
+      <button type="button" id='btn-entendi'  class="btn btn-outline-primary btnNo btn-custom-yellow btn-disabled" routerLink='/screen4' (click)="closeModal()">OK,ENTENDI </button>
+ 
+  </div>
+</ng-template>
+
+<button class="btn btn-outline-primary btnNo btn-custom" (click)="open(content)">NÃO</button>
+
+<!-- <button class="btn btn-lg btn-outline-primary" (click)="navigateToScreen3()">go to screen3</button> -->

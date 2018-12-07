@@ -1,0 +1,48 @@
+.hiddenContainer{
+    display: none
+}
+.containerScreen1{
+    padding: 50px 150px;
+    text-align:center;  
+}
+.containerBorder{
+    border:solid 1px #BDBDBD;
+    padding: 10px;
+}
+.btnYes{
+    width:100px;
+}
+.title-h4{
+   color: rgb(212, 151, 81)
+}
+
+.btn-custom {
+    color: #EB5A5A;
+    background-color: transparent;
+    background-image: none;
+    border-color: #EB5A5A;
+}
+.btn-custom:not(:disabled):not(.disabled):active, .btn-custom:hover {
+    color: #fff;
+    background-color: #EB5A5A;
+    border-color: #EB5A5A;
+}
+.btn-custom-yellow {
+    color: rgb(31, 29, 25);
+    background-color: #E6B40F;
+    background-image: none;
+    border-color: #E6B40F;
+}
+.btn-custom-yellow:not(:disabled):not(.disabled):active, .btn-custom-yellow:hover {
+    color: #fff;
+    background-color: #E6B40F;
+    border-color: #E6B40F;
+}
+.btn-disabled {
+    pointer-events: none;
+    cursor: default;
+    color: grey;
+    background-color: transparent;
+    background-image: none;
+    border-color: grey;
+}
